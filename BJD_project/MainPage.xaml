@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BJD_project.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="15,0"
+            HorizontalOptions="Center">
+
+            <Label
+                Text="Количество вредных выделений (грамм/час)"
+                FontSize="20"
+                FontAttributes ="Bold"
+                HorizontalOptions="Center"/>
+
+            <Line/>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                HorizontalOptions="Center"
+                VerticalOptions="StartAndExpand">
+
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="CO"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="Пыли Pb (10^(-3))"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="Нетоксичная пыль"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
