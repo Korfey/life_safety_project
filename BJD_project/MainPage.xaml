@@ -3,25 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BJD_project.MainPage">
 
-    <ScrollView>
+    <ScrollView
+        VerticalOptions="Center"
+        >
         <VerticalStackLayout
             Spacing="15"
             Padding="15,0"
             HorizontalOptions="Center">
-
+            
             <Label
                 Text="Количество вредных выделений (грамм/час)"
                 FontSize="20"
                 FontAttributes ="Bold"
+                VerticalOptions="Center"
                 HorizontalOptions="Center"/>
 
-            <Line/>
+            <Line X1="0" Y1="0" X2="1000" Y2="0" Stroke="DarkGray" StrokeThickness="2"/>
 
             <HorizontalStackLayout
                 Spacing="25"
                 Padding="30,0"
                 HorizontalOptions="Center"
-                VerticalOptions="StartAndExpand">
+                VerticalOptions="Center">
 
                 <VerticalStackLayout
                     Spacing="5"
@@ -34,6 +37,8 @@
                         FontSize="16"
                         HorizontalOptions="Center"/>
                     <Entry
+                        ToolTipProperties.Text="угарный газ"
+                        x:Name="co"
                         MaximumWidthRequest="200"
                         HorizontalOptions="Center"/>
                 </VerticalStackLayout>
@@ -44,7 +49,9 @@
                     HorizontalOptions="StartAndExpand">
 
                     <Label
-                        Text="Пыли Pb (10^(-3))"
+                        Text="Пыли Pb (10&#8315;&#179;)"
+                        
+                        TextType="Html"
                         FontSize="16"
                         HorizontalOptions="Center"/>
                     <Entry
@@ -59,6 +66,82 @@
 
                     <Label
                         Text="Нетоксичная пыль"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+
+            </HorizontalStackLayout>
+            <Label
+                Text="Тепловые выделения"
+                FontSize="20"
+                FontAttributes ="Bold"
+                HorizontalOptions="Center"/>
+
+            <Line X1="0" Y1="0" X2="1000" Y2="0" Stroke="DarkGray" StrokeThickness="2"/>
+
+            <HorizontalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="Объём"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        ToolTipProperties.Text="V, м(3)"
+                        x:Name="w_co"
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="Поступающая теплота"
+                        
+                        TextType="Html"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="Теплоотдача"
+                        FontSize="16"
+                        HorizontalOptions="Center"/>
+                    <Entry
+                        MaximumWidthRequest="200"
+                        HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+                <VerticalStackLayout
+                    Spacing="5"
+                    Padding="5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="StartAndExpand">
+
+                    <Label
+                        Text="Разность температур"
                         FontSize="16"
                         HorizontalOptions="Center"/>
                     <Entry
